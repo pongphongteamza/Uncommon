@@ -8,46 +8,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Uncommon</title>
 </head>
-
 <body>
-  
     <div class="bg-img">
-      <div class="container-new">
-        <img class="logo" src="image/logo-uncommon.png" alt="uncommon-logo">
-        <span class="title-search text-center">ระบบตรวจสอบเอกสารที่ได้รับการรับรอง</span>
+      <div class="container-new px-3">
+        <img class="logo to-center" src="image/logo-uncommon.png" alt="uncommon-logo">
+        <span class="title-search text-center focus-expand">ระบบตรวจสอบเอกสารที่ได้รับการรับรอง</span>
         <div class="search-bar d-flex justify-content-center">
-          <form class="form-search">
-            <div class="position-relative">
-              <input class="px-3" type="text" placeholder="กรอกรหัส หรือ ID เอกสาร...">
-                  <button class="clear-search position-absolute" style="top: 8px; right: 8px;">
-                    <img src="image/icon/x-mark-red.svg" alt="" class="" style="width: inherit; height:inherit;" >
-                  </button>
+          <form class="form-search w-100 h-100  d-flex align-items-center justify-content-center flex-md-row flex-column">
+            <div class="w-100 position-relative d-flex  justify-content-center">
+              <input class="px-3 input-js w-100" type="text" id="searchBar" placeholder="กรอกรหัส หรือ ID เอกสาร...">
+              <button class="clear-search position-absolute" style="top: 18%; right: 1%;">
+                <img src="image/icon/x-mark-red.svg" alt="" class="" style="width: inherit; height:inherit;" >
+              </button>
             </div>
-            <button class="search-button"><img src="image/search-icon.png">ค้นหา</button>
+            <button class="search-button mt-md-0 mt-3 d-flex justify-content-center"><img src="image/search-icon.png">ค้นหา</button>
           </form>
         </div>
-        <div class="search-bar-mobile d-flex justify-content-center">
-          <form>
-            <div class="position-relative">
-              <input class="px-3" type="text" placeholder="กรอกรหัส หรือ ID เอกสาร...">
-                  <button class="clear-search position-absolute" style="top: 8px; right: 8px;">
-                    <img src="image/icon/x-mark-red.svg" alt="" class="" style="width: inherit; height:inherit;" >
-                  </button>
-            </div>
-            <div class="d-flex justify-content-center mt-3">
-              <button class="search-button"><img src="image/search-icon.png">ค้นหา</button>
-            </div>  
-          </form>
-        </div>
+
         <!-- first-page -->
-        <div class="white-bg w-100 ">
-          <span class="title-status">วิธีค้นหาเอกสารที่ได้รับการรับรอง</span>
-          <div class="underline"></div>
-          <div class="row justify-content-center" style="margin-top: 50px; ">
-            <div class="mb-3 col-xl-3 col-md-6 w-100 p-0 d-flex justify-content-center">
-              <div class="step-card .w-25">
+
+        <!-- <div class="white-bg ">
+          <span class="title-status focus-text">วิธีค้นหาเอกสารที่ได้รับการรับรอง</span>
+          <div class="underline scale-center"></div>
+          <div class="row justify-content-center mx-auto" style="margin-top: 50px; ">
+            <div class="mb-3 col-xl-3 col-md-6 d-flex justify-content-center">
+              <div class="step-card ani-fade-in">
                 <div class="images-card w-100">
                   <img src="image/step1.png" alt="">
                 </div>
@@ -55,8 +43,8 @@
                 <p class="detials-card">กรอกรหัส / ID เอกสาร</p>
               </div>
             </div>
-            <div class="mb-3 col-xl-3 col-md-6 w-100 p-0 d-flex justify-content-center">
-              <div class="step-card .w-25">
+            <div class="mb-3 col-xl-3 col-md-6  d-flex justify-content-center">
+              <div class="step-card ani-fade-in">
                 <div class="images-card w-100">
                   <img src="image/step2.png" alt="">
                 </div>
@@ -64,8 +52,8 @@
                 <p class="detials-card">กดปุ่มค้นหา / กด Enter</p>
               </div>
             </div>
-            <div class="mb-3 col-xl-3 col-md-6 w-100 p-0 d-flex justify-content-center">
-              <div class="step-card .w-25">
+            <div class="mb-3 col-xl-3 col-md-6 d-flex justify-content-center">
+              <div class="step-card ani-fade-in">
                 <div class="images-card w-100">
                   <img src="image/step3.png" alt="">
                 </div>
@@ -73,8 +61,48 @@
                 <p class="detials-card">ผลลัพธ์ที่ได้จะปรากฏด้านล่าง</p>
               </div>
             </div>
-            <div class="mb-3 col-xl-3 col-md-6 w-100 p-0 d-flex justify-content-center">
-              <div class="step-card .w-25">
+            <div class="mb-3 col-xl-3 col-md-6 d-flex justify-content-center">
+              <div class="step-card ani-fade-in">
+                <div class="images-card w-100">
+                  <img src="image/step4.png" alt="">
+                </div>
+                <span class="title-card">ขั้นตอนที่ 4</span>
+                <p class="detials-card">กดปุ่ม “ไปยังเอกสาร” เพื่อเข้าถึงเอกสาร</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="white-bg w-100 d-none">
+          <div class="text-center">
+            <span class="title-status focus-text">วิธีค้นหาเอกสารที่ได้รับการรับรอง</span>
+          </div>
+          <div class="underline scale-center"></div>
+          <div class="contianer-card">
+            <div class="owl-carousel owl-theme ani-fade-in">
+
+              <div class=" step-card hvr-grow-shadow">
+                <div class="images-card w-100">
+                  <img src="image/step1.png" alt="">
+                </div>
+                <span class="title-card">ขั้นตอนที่ 1</span>
+                <p class="detials-card">กรอกรหัส / ID เอกสาร</p>
+              </div>
+              <div class=" step-card hvr-grow-shadow">
+                <div class="images-card w-100">
+                  <img src="image/step2.png" alt="">
+                </div>
+                <span class="title-card">ขั้นตอนที่ 2</span>
+                <p class="detials-card">กดปุ่มค้นหา / กด Enter</p>
+              </div>
+              <div class=" step-card hvr-grow-shadow">
+                <div class="images-card w-100">
+                  <img src="image/step3.png" alt="">
+                </div>
+                <span class="title-card">ขั้นตอนที่ 3</span>
+                <p class="detials-card">ผลลัพธ์ที่ได้จะปรากฏด้านล่าง</p>
+              </div>
+              <div class=" step-card hvr-grow-shadow">
                 <div class="images-card w-100">
                   <img src="image/step4.png" alt="">
                 </div>
@@ -84,53 +112,20 @@
             </div>
           </div>
         </div>
-        <!-- <div class="white-bg w-100 ">
-          <span class="title-status">วิธีค้นหาเอกสารที่ได้รับการรับรอง</span>
-          <div class="underline"></div>
-          <div class="contianer-card">
-            <div class="step-card .w-25">
-              <div class="images-card w-100">
-                <img src="image/step1.png" alt="">
-              </div>
-              <span class="title-card">ขั้นตอนที่ 1</span>
-              <p class="detials-card">กรอกรหัส / ID เอกสาร</p>
-            </div>
-            <div class="step-card .w-25">
-              <div class="images-card w-100">
-                <img src="image/step2.png" alt="">
-              </div>
-              <span class="title-card">ขั้นตอนที่ 2</span>
-              <p class="detials-card">กดปุ่มค้นหา / กด Enter</p>
-            </div>
-            <div class="step-card .w-25">
-              <div class="images-card w-100">
-                <img src="image/step3.png" alt="">
-              </div>
-              <span class="title-card">ขั้นตอนที่ 3</span>
-              <p class="detials-card">ผลลัพธ์ที่ได้จะปรากฏด้านล่าง</p>
-            </div>
-            <div class="step-card .w-25">
-              <div class="images-card w-100">
-                <img src="image/step4.png" alt="">
-              </div>
-              <span class="title-card">ขั้นตอนที่ 4</span>
-              <p class="detials-card">กดปุ่ม “ไปยังเอกสาร” เพื่อเข้าถึงเอกสาร</p>
-            </div>
-          </div>
-        </div> -->
+
         <!-- error -->
         <div class="white-bg w-100 d-none">
-          <span class="title-status">ไม่พบรหัส หรือ ID เอกสาร</span>
-          <div class="underline"></div>
-          <div class="d-flex justify-content-center" style="margin-top: 22px;">
+          <span class="title-status focus-text">ไม่พบรหัส หรือ ID เอกสาร</span>
+          <div class="underline scale-center"></div>
+          <div class="d-flex justify-content-center flip-right" style="margin-top: 22px;">
               <img src="image/not-found.png" alt="" class="not-found">
           </div>
         </div>
         <!-- read-file -->
-        <div class="white-bg w-100 d-none">
-          <span class="title-status">เอกสาร  #5159056921216391623</span>
-          <div class="underline"></div>
-          <div class="d-flex justify-content-center" style="margin-top: 100px;">
+        <div class="white-bg w-100">
+          <span class="title-status focus-text text-center">เอกสาร  #5159056921216391623</span>
+          <div class="underline scale-center"></div>
+          <div class="d-flex justify-content-center file">
               <img src="image/file.png" alt="" class="">
           </div>
           <div class="text-center read-file">
@@ -139,8 +134,7 @@
           </div>
           <div class="d-flex justify-content-center" style="margin-top:22px;">
             <button class="btn-read d-flex align-items-center">
-                <span style="margin-right: 11px;">ไปยังเอกสาร</span>
-                <img src="image/icon/arrow.svg" alt="">
+                <span>ไปยังเอกสาร</span>
             </button>
           </div>
         </div>
@@ -150,6 +144,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
