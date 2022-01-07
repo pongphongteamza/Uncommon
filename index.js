@@ -6,13 +6,16 @@ $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         loop: false,
         margin: 20,
-        nav: true,
+        dots:false,
         responsive: {
           0: {
             items: 1,
+            dots:true,
           },
           768:{
             items: 2,
+            navText:['<img src="image/prev.png">','<img src="image/next.png">'],
+            nav: true,
           },
           1200: {
             items: 4,

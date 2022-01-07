@@ -171,7 +171,7 @@
 }
 @media only screen and (max-width:576px) {
   .white-bg {
-    height: calc(100vh - 387px);
+    height: calc(100vh - 300px);
   }
 }
 @media only screen and (max-width:375px) {
@@ -181,7 +181,7 @@
 }
 @media (max-height:668px) {
   .white-bg {
-    height: calc(100vh - 320px);
+    height: calc(100vh - 240px);
   }
 }
 .owl-carousel{
@@ -192,87 +192,31 @@
     margin-top: -69px;
   }
 }
-.owl-theme .owl-nav [class*="owl-"]:hover {
-  background: none;
-  color: #869791;
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none !important;
+  color: #FFF;
   text-decoration: none;
 }
 button:focus {
   outline: none !important;
 }
-
-.owl-prev {
-  position: absolute;
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  font-size: 53px !important;
-  color: #fff !important;
-  transition:.3s;
-}
-.owl-next {
-  position: absolute;
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  font-size: 53px !important;
-  color: #fff !important;
-  transition:.3s;
-}
-.owl-next:active {
-  margin-right: -30px;
-}
-.owl-prev:active {
-  margin-left: -30px;
-}
-
-.owl-prev span {
+.owl-nav{
   position: relative;
 }
-.owl-prev span::after,
-.owl-next span::after {
-  content: '';
+.owl-nav .owl-prev{
   position: absolute;
-  top: 32%;
-  left: 50%;
-  transform: translate(-50%);
-  background-color: #FB3F15;
-  width: 43px;
-  height: 43px;
-  border-radius: 50%;
-  z-index: -10;
+  left: 40%;
 }
-.owl-prev {
-  left: 45%;
-}
-@media only screen and (max-width:992px) {
-  .owl-prev {
-    
-  }
+.owl-nav .owl-next{
+  position: absolute;
+  right: 40%;
 }
 @media only screen and (max-width:768px) {
-  .owl-prev {
-    
+  .owl-nav .owl-prev{
+    left: 37%;
   }
-}
-@media only screen and (max-width:576px) {
-  .owl-prev {
-    
-  }
-  
-}
-
-.owl-next {
-  right: 45%;
-}
-@media only screen and (max-width:548px) {
-  .owl-prev,
-  .owl-next {
-    top: 42%;
-  }
-  .owl-prev {
-    left: 8%;
-  }
-  .owl-next {
-    right: 4%;
+  .owl-nav .owl-next{
+    right: 37%;
   }
 }
 
@@ -639,6 +583,12 @@ button.btn-read:active{
     opacity: 1;
   }
 }
+
+@media (min-width:1500px) {
+  .title-status{
+    margin-top: 45px;
+  }
+}
 @media (max-width:1440px) and (min-width:1025px) {
   .white-bg {
     height: calc(100vh - 341px);
@@ -701,9 +651,6 @@ button.btn-read:active{
   }
 }
 @media (max-width:665px) {
-  .title-status{
-    font-size: 19px;
-  }
   .logo{
     width: 65%;
   }
