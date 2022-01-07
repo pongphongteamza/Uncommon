@@ -11,17 +11,14 @@ $(document).ready(function () {
   function owl_carousel() {
     $(".owl-carousel").owlCarousel({
         loop: false,
-        margin: 10,
+        margin: 20,
         nav: true,
         responsive: {
           0: {
             items: 1,
           },
-          550: {
+          768:{
             items: 2,
-          },
-          1000: {
-            items: 3,
           },
           1200: {
             items: 4,
@@ -95,8 +92,8 @@ $(document).ready(function () {
                     <div class="not-found-wrapper w-100">
                         <span class="title-status focus-text">ไม่พบรหัส หรือ ID เอกสาร</span>
                         <div class="underline scale-center "></div>
-                        <div class="d-flex justify-content-center flip-right mt-3">
-                            <img src="image/not-found.png" alt="" class="not-found">
+                        <div class="d-flex justify-content-center fadeInUp mt-3">
+                            <img src="image/not-found.png" alt="" class="not-found ">
                         </div>
                     </div>
             `;
