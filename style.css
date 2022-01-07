@@ -97,6 +97,9 @@
   height: 45px;
   outline: none ;
 }
+.search-bar input:focus {
+  border: 2px solid #FF6827;
+}
 .search-bar-bg{
   background: rgba(37, 77, 207, 0.8) ;
   transition: .4s ease;
@@ -162,7 +165,7 @@
 .white-bg{
   background: #FBFBFB;
   width: 100%;
-  height: calc(100vh - 422px);
+  height: calc(100vh - 421px);
   border-radius: 15px 15px 0 0;
   margin: 0 auto;
 }
@@ -176,7 +179,11 @@
     height: calc(100vh - 373px);
   }
 }
-
+@media (max-height:668px) {
+  .white-bg {
+    height: calc(100vh - 320px);
+  }
+}
 .owl-carousel{
   position: relative;
 }
@@ -196,16 +203,16 @@ button:focus {
 
 .owl-prev {
   position: absolute;
-  top: -8%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
   font-size: 53px !important;
   color: #fff !important;
   transition:.3s;
 }
 .owl-next {
   position: absolute;
-  top: -7.8%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
   font-size: 53px !important;
   color: #fff !important;
   transition:.3s;
@@ -234,27 +241,27 @@ button:focus {
   z-index: -10;
 }
 .owl-prev {
-  left: 89%;
+  left: 45%;
 }
 @media only screen and (max-width:992px) {
   .owl-prev {
-    left: 87%;
+    
   }
 }
 @media only screen and (max-width:768px) {
   .owl-prev {
-    left: 85%;
+    
   }
 }
 @media only screen and (max-width:576px) {
   .owl-prev {
-    left: 83%;
+    
   }
   
 }
 
 .owl-next {
-  right: 4.5%;
+  right: 45%;
 }
 @media only screen and (max-width:548px) {
   .owl-prev,
@@ -265,7 +272,7 @@ button:focus {
     left: 8%;
   }
   .owl-next {
-    right: 8%;
+    right: 4%;
   }
 }
 
@@ -634,7 +641,7 @@ button.btn-read:active{
 }
 @media (max-width:1440px) and (min-width:1025px) {
   .white-bg {
-    height: calc(100vh - 354px);
+    height: calc(100vh - 341px);
   }
   .container-card {
     margin-top: 14px;

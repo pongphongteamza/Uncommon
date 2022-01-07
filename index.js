@@ -1,12 +1,6 @@
-const searchBar = document.getElementById("searchBar");
+
 
 $(document).ready(function () {
-  $(document).on("focus", ".input-js", function () {
-    $(".search-bar").css("background-color", "rgba(37, 77, 207, 0.8)");
-  });
-  $(document).on("blur", ".input-js", function () {
-    $(".search-bar").css("background-color", "rgba(17, 17, 17, 0.85)");
-  });
   owl_carousel();
   function owl_carousel() {
     $(".owl-carousel").owlCarousel({
