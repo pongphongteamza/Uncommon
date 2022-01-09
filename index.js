@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   owl_carousel();
   function owl_carousel() {
@@ -138,3 +136,11 @@ $(document).ready(function () {
   });
   
 });
+
+// var animation = bodymovin.loadAnimation({
+//   container: document.getElementById('file-bm'),
+//   renderer: 'svg',
+//   loop: true,
+//   autoplay: true,
+//   path: ''
+// })

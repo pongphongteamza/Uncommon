@@ -7,69 +7,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <title>Uncommon</title>
 </head>
-<body>
-    <main class="bg-img">
-      <div class="container-new px-3">
-        <img class="logo to-center" src="image/logo-uncommon.png" alt="uncommon-logo">
-        <span class="title-search text-center focus-expand">ระบบตรวจสอบเอกสารที่ได้รับการรับรอง</span>
-        <div class="search-bar d-flex justify-content-center">
-          <div class="search-wrapper w-100 h-100  d-flex align-items-center justify-content-center flex-md-row flex-column">
-            <div class="w-100 position-relative d-flex  justify-content-center">
-              <input class="px-3 input-js w-100" type="text" id="searchBar" placeholder="กรอกรหัส หรือ ID เอกสาร...">
-              <button class="clear-search position-absolute d-flex justify-content-center align-items-center" style="top: 18%; right: 1%;">
-                <img src="image/icon/only-x-mark.svg" alt="" class="x-mark text-center"  >
-              </button>
-            </div>
-            <button class="search-button mt-md-0 mt-3 d-flex justify-content-center"><img src="image/search-icon.png">ค้นหา</button>
-          </div>
-        </div>
 
-        <!-- first-page -->
-        <div class="white-bg w-100 overflow-hidden js-wrapper">
-          <div class="search-step">
-            <div class="text-center">
-              <span class="title-status focus-text">วิธีค้นหาเอกสารที่ได้รับการรับรอง</span>
-            </div>
-            <div class="underline scale-center"></div>
-            <div class="container-card">
-              <div class="owl-carousel owl-theme ani-fade-in">
-                <div class=" step-card hvr-grow-shadow">
-                  <div class="images-card w-100">
-                    <img src="image/step1.png" alt="">
-                  </div>
-                  <span class="title-card">ขั้นตอนที่ 1</span>
-                  <p class="details-card">กรอกรหัส / ID เอกสาร</p>
+<body>
+  <main class="bg-img">
+    <div class="container-new px-3">
+      <img class="logo to-center" src="image/logo-uncommon.png" alt="uncommon-logo">
+      <span class="title-search text-center focus-expand">ระบบตรวจสอบเอกสารที่ได้รับการรับรอง</span>
+      <div class="search-bar d-flex justify-content-center">
+        <div
+          class="search-wrapper w-100 h-100  d-flex align-items-center justify-content-center flex-md-row flex-column">
+          <div class="w-100 position-relative d-flex  justify-content-center">
+            <input class="px-3 input-js w-100" type="text" id="searchBar" placeholder="กรอกรหัส หรือ ID เอกสาร...">
+            <button class="clear-search position-absolute d-flex justify-content-center align-items-center"
+              style="top: 18%; right: 1%;">
+              <img src="image/icon/only-x-mark.svg" alt="" class="x-mark text-center">
+            </button>
+          </div>
+          <button class="search-button mt-md-0 mt-3 d-flex justify-content-center"><img
+              src="image/search-icon.png">ค้นหา</button>
+        </div>
+      </div>
+
+      <!-- first-page -->
+      <div class="white-bg w-100 overflow-hidden js-wrapper">
+        <div class="search-step">
+          <!-- <div class="text-center">
+            <span class="title-status focus-text">วิธีค้นหาเอกสารที่ได้รับการรับรอง</span>
+          </div>
+          <div class="underline scale-center"></div>
+          <div class="container-card">
+            <div class="owl-carousel owl-theme ani-fade-in">
+              <div class=" step-card hvr-grow-shadow">
+                <div class="images-card w-100">
+                  <img src="image/step1.png" alt="">
                 </div>
-                <div class=" step-card hvr-grow-shadow">
-                  <div class="images-card w-100">
-                    <img src="image/step2.png" alt="">
-                  </div>
-                  <span class="title-card">ขั้นตอนที่ 2</span>
-                  <p class="details-card">กดปุ่มค้นหา / กด Enter</p>
-                </div>
-                <div class=" step-card hvr-grow-shadow">
-                  <div class="images-card w-100">
-                    <img src="image/step3.png" alt="">
-                  </div>
-                  <span class="title-card">ขั้นตอนที่ 3</span>
-                  <p class="details-card">ผลลัพธ์ที่ได้จะปรากฏด้านล่าง</p>
-                </div>
-                <div class=" step-card hvr-grow-shadow">
-                  <div class="images-card w-100">
-                    <img src="image/step4.png" alt="">
-                  </div>
-                  <span class="title-card">ขั้นตอนที่ 4</span>
-                  <p class="details-card">กดปุ่ม “ไปยังเอกสาร” เพื่อเข้าถึงเอกสาร</p>
-                </div>
-              
+                <span class="title-card">ขั้นตอนที่ 1</span>
+                <p class="details-card">กรอกรหัส / ID เอกสาร</p>
               </div>
+              <div class=" step-card hvr-grow-shadow">
+                <div class="images-card w-100">
+                  <img src="image/step2.png" alt="">
+                </div>
+                <span class="title-card">ขั้นตอนที่ 2</span>
+                <p class="details-card">กดปุ่มค้นหา / กด Enter</p>
+              </div>
+              <div class=" step-card hvr-grow-shadow">
+                <div class="images-card w-100">
+                  <img src="image/step3.png" alt="">
+                </div>
+                <span class="title-card">ขั้นตอนที่ 3</span>
+                <p class="details-card">ผลลัพธ์ที่ได้จะปรากฏด้านล่าง</p>
+              </div>
+              <div class=" step-card hvr-grow-shadow">
+                <div class="images-card w-100">
+                  <img src="image/step4.png" alt="">
+                </div>
+                <span class="title-card">ขั้นตอนที่ 4</span>
+                <p class="details-card">กดปุ่ม “ไปยังเอกสาร” เพื่อเข้าถึงเอกสาร</p>
+              </div>
+
             </div>
           </div>
+        </div> -->
           <!-- 404 NOT FOUND -->
           <!-- <div class="not-found-wrapper w-100">
             <span class="title-status focus-text">ไม่พบรหัส หรือ ID เอกสาร</span>
@@ -79,34 +85,45 @@
             </div>
           </div> -->
           <!-- read-file -->
-          <!-- <div class="read-file-wrapper">
+          <div class="read-file-wrapper">
             <span class="title-status focus-text text-center">เอกสาร #5159056921216391623</span>
             <div class="underline scale-center"></div>
-            <div class="d-flex justify-content-center file">
-                <img src="image/file.png" alt="" class="">
-            </div>
-            <div class="text-center read-file">
-              <span class="d-block">คุณสามารถเข้าถึง / ดาวน์โหลด เอกสาร</span>
-              <span class="d-block">ผ่านปุ่ม “ไปยังเอกสาร” ด้านล่าง</span>
-            </div>
-            <button class="btn-read d-flex align-items-center mx-auto mt-3 mt-sm-4">
-                <a href="http://" target="_blank">
-                  <span class="text-light">ไปยังเอกสาร</span>
-                </a>
-            </button>
-          </div> -->
+            <!-- <div class="d-flex justify-content-center file"> -->
+            <!-- <div id="file-bm"></div> -->
+            <!-- <img src="image/file.png" alt="" class=""> -->
+            <img id="file-bm" src="image/anim-svg/flie.gif" alt="" class="">
+          </div>
+          <div class="text-center read-file">
+            <span class="d-block">คุณสามารถเข้าถึง / ดาวน์โหลด เอกสาร</span>
+            <span class="d-block">ผ่านปุ่ม “ไปยังเอกสาร” ด้านล่าง</span>
+          </div>
+          <button class="btn-read d-flex align-items-center mx-auto mt-3 mt-sm-4">
+            <a href="http://" target="_blank">
+              <span class="text-light">ไปยังเอกสาร</span>
+            </a>
+          </button>
         </div>
-
-
       </div>
-    </main>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="index.js"></script>
-  </body>
+    </div>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script> -->
+</body>
 
 </html>

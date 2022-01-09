@@ -157,9 +157,6 @@
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-
-
-
 .white-bg{
   background: #FBFBFB;
   width: 100%;
@@ -167,12 +164,22 @@
   border-radius: 15px 15px 0 0;
   margin: 0 auto;
 }
+
+#file-bm {
+  display: flex;
+  width: 100px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+
 @media only screen and (max-width:576px) {
   .white-bg {
     height: calc(100vh - 300px);
   }
 }
 @media only screen and (max-width:375px) {
+
   .white-bg {
     height: calc(100vh - 373px);
   }
