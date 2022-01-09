@@ -70,7 +70,7 @@ $(document).ready(function () {
                     <span class="title-status focus-text text-center">เอกสาร #${search_id}</span>
                     <div class="underline scale-center"></div>
                     <div class="d-flex justify-content-center file ani-fade-in">
-                        <img src="image/file.png" alt="" class="">
+                      <img id="file-bm" src="image/anim-svg/flie.gif" alt="" class="">
                     </div>
                     <div class="text-center read-file">
                     <span class="d-block">คุณสามารถเข้าถึง / ดาวน์โหลด เอกสาร</span>
