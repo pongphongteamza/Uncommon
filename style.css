@@ -15,6 +15,7 @@
   font-family: var(--font-sarabun);
 }
 .not-found{
+  width: 380px;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -178,7 +179,6 @@
   }
 }
 @media only screen and (max-width:375px) {
-
   .white-bg {
     height: calc(100vh - 373px);
   }
@@ -216,6 +216,9 @@ button:focus {
   right: 40%;
 }
 @media only screen and (max-width:768px) {
+  .not-found {
+    width: 500px;
+  }
   .owl-nav .owl-prev{
     left: 37%;
   }

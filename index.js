@@ -88,7 +88,7 @@ $(document).ready(function () {
                         <span class="title-status focus-text">ไม่พบรหัส หรือ ID เอกสาร</span>
                         <div class="underline scale-center "></div>
                         <div class="d-flex justify-content-center fadeInUp mt-3">
-                            <img src="image/not-found.png" alt="" class="not-found ">
+                            <img src="image/anim-svg/404.gif" alt="" class="not-found">
                         </div>
                     </div>
             `;
@@ -136,11 +136,3 @@ $(document).ready(function () {
   });
   
 });
-
-// var animation = bodymovin.loadAnimation({
-//   container: document.getElementById('file-bm'),
-//   renderer: 'svg',
-//   loop: true,
-//   autoplay: true,
-//   path: ''
-// })
