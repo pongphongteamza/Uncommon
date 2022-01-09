@@ -70,7 +70,7 @@ $(document).ready(function () {
                     <span class="title-status focus-text text-center">เอกสาร #${search_id}</span>
                     <div class="underline scale-center"></div>
                     <div class="d-flex justify-content-center file ani-fade-in">
-                      <img id="file-bm" src="image/anim-svg/flie.gif" alt="" class="">
+                      <img id="file-bm" src="image/anim-gif/flie.gif" alt="" class="">
                     </div>
                     <div class="text-center read-file">
                     <span class="d-block">คุณสามารถเข้าถึง / ดาวน์โหลด เอกสาร</span>
@@ -88,7 +88,7 @@ $(document).ready(function () {
                         <span class="title-status focus-text">ไม่พบรหัส หรือ ID เอกสาร</span>
                         <div class="underline scale-center "></div>
                         <div class="d-flex justify-content-center fadeInUp mt-3">
-                            <img src="image/anim-svg/404.gif" alt="" class="not-found">
+                            <img src="image/anim-gif/404.gif" alt="" class="not-found">
                         </div>
                     </div>
             `;
