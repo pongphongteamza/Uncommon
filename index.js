@@ -3,20 +3,26 @@ $(document).ready(function () {
   function owl_carousel() {
     $(".owl-carousel").owlCarousel({
         loop: false,
-        margin: 20,
+        // margin: -50,
         dots:false,
+        dots:true,
         responsive: {
           0: {
             items: 1,
-            dots:true,
           },
           768:{
             items: 2,
             navText:['<img src="image/prev.png">','<img src="image/next.png">'],
             nav: true,
+            margin: 20,
           },
           1200: {
             items: 4,
+            margin: 0,
+          },
+          1201: {
+            items: 4,
+            margin: -50,
           },
         },
       });
@@ -76,7 +82,12 @@ $(document).ready(function () {
                     <span class="d-block">คุณสามารถเข้าถึง / ดาวน์โหลด เอกสาร</span>
                     <span class="d-block">ผ่านปุ่ม “ไปยังเอกสาร” ด้านล่าง</span>
                     </div>
-                    <button class="btn-read d-flex align-items-center mx-auto mt-3 mt-sm-4">
+                    <button class="btn-read  mx-auto mt-3 mt-sm-4 d-xl-block d-none">
+                        <a href="https://check.unco-op.co.th/CHECK-CUSTOMER/CHECK-AND-VERIFY/${search_id}/${search_id}.pdf" target="_blank">
+                        <span class="text-light">ไปยังเอกสาร</span>
+                        </a>
+                    </button>
+                    <button class="btn-read-mobile d-flex align-items-center mx-auto mt-3 mt-sm-4 d-xl-none d-block">
                         <a href="https://check.unco-op.co.th/CHECK-CUSTOMER/CHECK-AND-VERIFY/${search_id}/${search_id}.pdf" target="_blank">
                         <span class="text-light">ไปยังเอกสาร</span>
                         </a>
