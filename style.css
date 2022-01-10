@@ -15,7 +15,7 @@
   font-family: var(--font-sarabun);
 }
 .not-found{
-  width: 530px;
+  width: 400px;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -259,6 +259,11 @@ button:focus {
 .owl-nav .owl-next{
   position: absolute;
   right: 40%;
+}
+@media only screen and (max-width:1024px) {
+  .not-found {
+    width: 600px;
+  }
 }
 @media only screen and (max-width:768px) {
   .not-found {
